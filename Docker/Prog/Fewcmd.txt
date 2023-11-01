@@ -1,0 +1,22 @@
+docker run -d -p 80:27017 --name mymongo mongo
+docker ps
+docker ps -a
+docker exec -it mymongo bash
+(#)mongo
+>show dbs
+>use cloud
+>db.user.insert({"name":"dinesh", "course":"phd"})
+>show dbs
+>db.user.find() =>show records
+> exit
+# exit
+>docker ps
+> dcoker stop id
+>docker rmi imageid
+>docker rm container id
+----for mongo done........
+docker build -t hellolocal .  ==>for buidling docker image
+docker run hellolocal => to run the container 
+docker run -it hellolocal => to run the container 
+docker tag hellolocal neeteshiitr/hellolocal
+docker push neeteshiitr/hellolocal

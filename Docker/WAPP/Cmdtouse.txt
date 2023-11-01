@@ -1,0 +1,5 @@
+docker build -t nk/wapp .
+
+docker  run -p 8888:5000 --name wapp nk/wapp
+
+http://localhost:8888
